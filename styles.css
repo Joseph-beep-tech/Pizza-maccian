@@ -40,9 +40,10 @@ a:hover {
     color: blue;
 }
 body{
-    background-image: url('../images/pasta.png');
+    /* background-image: url('../images/pasta.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: teal;
 }
  .row img{
     padding-right: 30px;
