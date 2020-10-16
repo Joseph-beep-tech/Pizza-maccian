@@ -1,13 +1,49 @@
 
 .home {
-    background-image: url('./images/pizza1.jpg');
+    background-image: url('../images/pizza1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+#k2 {
+    text-shadow: 2px 2px gold;
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content:  space-around;
+    flex-direction: row;
+    background-color: honeydew;
+}
+nav {
+    background: goldenrod;
+    height: 80px;
+    width: 100%; 
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0.5px;
+}
+nav ul li a {
+    color: rgb(207, 63, 27);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a:hover {
+    transition: .5sec;
+    color: blue;
+}
+body{
+    background-image: url('../images/pasta.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container {
-    padding-top: 20px;
-}
-#k2 {
-    text-shadow: 2px 2px wheat;
-    text-align: center;
+ .row img{
+    padding-right: 30px;
 }
