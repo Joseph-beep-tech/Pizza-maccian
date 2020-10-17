@@ -2,7 +2,7 @@
   background-image: url("../images/pizza1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: rgb(129, 113, 113);
   text-align: center;
 }
 #k2 {
@@ -50,12 +50,6 @@ body {
 #m1,
 #m2,
 #m3,
-#m4 {
-  display: none;
-}
-#m1,
-#m2,
-#m3,
 #m4,
 #m5,
 #m6,
@@ -75,4 +69,7 @@ body {
 .card {
   width: 283;
   height: 200;
+}
+#k3 {
+    color: white;
 }
