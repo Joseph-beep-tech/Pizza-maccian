@@ -136,7 +136,7 @@
                 <label for="number">No of pizza</label>
                 <input type="number" class="form-control" name="pizza" id="piz" placeholder="">
                 <label for="topping">TOPPINGS</label>
-                <div class="row">
+                <div class="row" id="rowe">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="toppings" value="fennel" id="fennel">
                         <label class="form-check-label" for="fennel">Fennel</label>
@@ -147,14 +147,14 @@
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="sau" value="sausage" name="topping">
-                        <label class="topping" for="topping">Sausage.</label>
+                        <label class="topping" for="topping">Sausage</label>
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="scalion" value="scalion" name="topping">
                         <label class="topping" for="topping">Scalion</label>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="rowe">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="blackolive" value="blackolive" name="topping">
                         <label class="topping" for="topping">Black olives</label>
@@ -165,10 +165,10 @@
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="onions" name="topping">
-                        <label class="topping" for="topping">Ceramalized onions</label>
+                        <label class="topping" for="topping">Caramelized onions</label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-warning" id="firstselect" onclick="orderNow()">ORDER</button>
+                <button type="submit" class="btn btn-primary" id="firstselect" onclick="findOrder()">ORDER</button>
             </form>
         </div>
     </div>

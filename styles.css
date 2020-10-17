@@ -74,3 +74,10 @@ a:hover {
 .us {
   font-size: 20px;
 }
+#sign {
+  background-color: goldenrod;
+  text-align: center;
+}
+ #rowe {
+   margin-left: 30%;
+ }
