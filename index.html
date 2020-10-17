@@ -107,10 +107,10 @@
         <br>
         <div id="sign">
             <form action="">
-                <label for="name">NAME</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="ENTER NAME" required>
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="name" required>
                 <label for="">Pizza</label>
-                <select class="custom-select my-1 mr-sm-2" id="pizzatype" required>
+                <select class="custom-select my-1 mr-sm-2" id="type" required>
         <option class="form-group" ></option>
         <option value="Margherita Pizza">Margherita Pizza</option>
         <option value="Pepperoni Pizza">Pepperoni Pizza</option>
@@ -119,39 +119,39 @@
         <option value="Meat-Lover's Pizza">Meat-Lover's Pizza</option>
         <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
       </select>
-                <label for="size">SIZE</label>
+                <label for="size">Size</label>
                 <select class="custom-select my-1 mr-sm-2" id="size" required>
         <option ></option>
         <option>Small</option>
         <option>Medium</option>
         <option>Large</option>
       </select>
-                <label for="crust">CRUST</label>
-                <select class="custom-select my-1 mr-sm-2" id="crust">
+                <label for="crust">Crust</label>
+                <select class="custom-select my-1 mr-sm-2" id="lab">
           <option selected id="crust"></option>
           <option value="crispy">Crispy</option>
           <option value="stuffed">Stuffed </option>
           <option value="gluten-free">Gluten</option>
         </select>
-                <label for="number">NO OF PIZZA</label>
-                <input type="number" class="form-control" name="pizza-no" id="pizza-no" placeholder="NO OF PIZZA">
+                <label for="number">No of pizza</label>
+                <input type="number" class="form-control" name="pizza" id="piz" placeholder="">
                 <label for="topping">TOPPINGS</label>
                 <div class="row">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms">
-                        <label class="form-check-label" for="mushrooms">Mushroom</label>
+                        <input class="form-check-input" type="checkbox" name="toppings" value="fennel" id="fennel">
+                        <label class="form-check-label" for="fennel">Fennel</label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="mushroom" value="mushroom" name="topping">
+                        <input type="checkbox" class="form-check-input" id="mush" value="mushroom" name="topping">
                         <label class="form-check-label" for="exampleCheck1">Mushrooms</label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="sausage" value="sausage" name="topping">
+                        <input type="checkbox" class="form-check-input" id="sau" value="sausage" name="topping">
                         <label class="topping" for="topping">Sausage.</label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="bacon" value="bacon" name="topping">
-                        <label class="topping" for="topping">Bacon</label>
+                        <input type="checkbox" class="form-check-input" id="scalion" value="scalion" name="topping">
+                        <label class="topping" for="topping">Scalion</label>
                     </div>
                 </div>
                 <div class="row">
@@ -165,7 +165,7 @@
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="onions" name="topping">
-                        <label class="topping" for="topping">Onions</label>
+                        <label class="topping" for="topping">Ceramalized onions</label>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-warning" id="firstselect" onclick="orderNow()">ORDER</button>
