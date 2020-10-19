@@ -10,10 +10,14 @@
 *click to view my pizza web*
  {}
  ## Technologies used
- {HTML for designing webpage}
- {Bootsrap and css for styling webpage}
- {jQuery for awesomeness of the site}
- {Javascript for interactivity of the page}
+ * HTML for designing webpage
+
+ * Bootstrap and css for styling webpage
+
+ * jQuery for awesomeness of the site
+
+ * Javascript for interactivity of the page
+
 ## Copyright and License
 MIT License
 Copyright (c) [2020] [Joseph Okoth Otieno]
