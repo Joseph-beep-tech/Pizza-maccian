@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(".j2").hover(function() {
         $("#m2").toggle();
     })
-    
+
     $(".j3").hover(function() {
         $("#m3").toggle();
     });
@@ -31,3 +31,15 @@ $(document).ready(function() {
         $("#m8").toggle();
     });
 });
+function findOrder() {
+    
+    var name = $("input#name").val();
+    var flavor = $("#type").val();
+    var crust = $("#lab").val();
+    var size = $("#size").val();
+    var number = $("#piz").val();
+    var toppings = [];
+    $.each($('input[name="toppings"]:chrcked'), function() {
+        toppings.push($(this).val());
+    });
+}
