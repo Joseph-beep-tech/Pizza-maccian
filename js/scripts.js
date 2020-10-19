@@ -42,4 +42,10 @@ function findOrder() {
     $.each($('input[name="toppings"]:chrcked'), function() {
         toppings.push($(this).val());
     });
+    var priceSize;
+    if (flavor === "Margherita Pizza" || flavor === "Pepperoni Pizza" || flavor === "BBQ Chicken Pizza") {
+        if (size === "Small") {
+            priceSize = 600;
+        }
+    }
 }
