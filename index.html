@@ -197,72 +197,127 @@
         </div>
 
         <br>
-        <div id="sign">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="" required>
-                <label for="">Pizza</label>
-                <select class="custom-select my-1 mr-sm-2" id="type" required>
-                    <option></option>
-                    <option>Margherita Pizza</option>
-                    <option>Pepperoni Pizza</option>
-                    <option>BBQ Chicken Pizza</option>
-                    <option>Hawaiian Pizza.</option>
-                    <option>Meat-Lover's Pizza</option>
-                    <option>Chicken Alfredo Pizza</option>
-                </select>
-                <label for="size">Size</label>
-                <select class="custom-select my-1 mr-sm-2" id="size" required>
-                    <option></option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                </select>
-                <label for="crust">Crust</label>
-                <select class="custom-select my-1 mr-sm-2" id="lab">
-                    <option selected id="crust"></option>
-                    <option value="crispy">Crispy</option>
-                    <option value="stuffed">Stuffed </option>
-                    <option value="gluten-free">Gluten-free</option>
-                </select>
-                <label for="number">No of pizza</label>
-                <input type="number" class="form-control" name="pizza" id="piz" placeholder="">
-                <label for="topping">TOPPINGS</label>
-                <div class="row" id="rowe">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="toppings" value="fennel" id="fennel">
-                        <label class="form-check-label" for="fennel">Fennel</label>
+         <div id="sign">
+            <div class="container-fluid order" id="make-order">
+                <div class="order-overlay">
+                    <div class="controls-top text-center" id="Order-now">
+                        <h2>Order</h2>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="mush" value="mushroom" name="topping">
-                        <label class="form-check-label" for="exampleCheck1">Mushrooms</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="sau" value="sausage" name="topping">
-                        <label class="topping" for="topping">Sausage</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="scalion" value="scalion" name="topping">
-                        <label class="topping" for="topping">Scalion</label>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <form action="">
+                                <label for="select">Flavor</label>
+                                <select class="browser-default custom-select custom-select-md mb-3 name" id="name">
+                              <option value=""></option>
+                              <option value="Peri Peri">Pepperoni Pizza</option>
+                              <option value="Cheese pizza">Cheese Pizza</option>
+                              <option value="Veggie Pizza">Veggie Pizza</option>
+                              <option value="Meat Pizza">Meat Pizza</option>
+                              <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+                              <option value="Margherita Pizza">Margherita Pizza</option>
+                              <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
+                              <option value="Supreme Pizza">Supreme Pizza</option>
+                              <option value="Zuchini pizza">Zuchini Pizza</option>
+                            </select>
+                                <label for="select">Select Size</label>
+                                <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                                    <option value=""></option>   
+                              <option value="large">Large  sh. 1300</option>
+                              <option value="medium">Medium  sh. 850</option>
+                              <option value="small">Small  sh. 650</option>
+                            </select>
+                                <label for="crust">Choose your favorite Crust</label>
+                                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                              <option selected value="0">Select crust</option>
+                              <option value=""></option>
+                              <option value="Crispy">Crispy sh. 200</option>
+                              <option value="Stuffed">Stuffed sh. 100</option>
+                              <option value="Gluten-free">Gluten-free sh. 130</option>
+                              <option value="Flatbread">Flatbread sh. 250</option>
+                              <option value="Focaccia">Focaccia sh. 200</option>
+                            </select>
+                                <label for="Toppings">Select  Toppings </label><br>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                                    <label class="custom-control-label" for="Bacon">Bacon</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Onions" value="Onions" name="toppings">
+                                    <label class="custom-control-label" for="Onions">Onions</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                                    <label class="custom-control-label" for="Sausage">Sausage</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Garlic" value="Garlic" name="toppings">
+                                    <label class="custom-control-label" for="Garlic">Garlic</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Green peppers" value="Green peppers" name="toppings">
+                                    <label class="custom-control-label" for="Green peppers">Green peppers</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Raspberry" value="Raspberry" name="toppings">
+                                    <label class="custom-control-label" for="Raspberry">Raspberry</label>
+                                </div>
+                                <br><br>
+                                <button type="submit" class="btn btn-secondary bg-secondary proceed">Next</button>
+        
+                            </form>
+                        </div>
+                        <div class="col-sm-7">
+                            <div id="infor">
+                                <h1 class="h6-reponsive white-text text-lowercase pulse">Confirm order</h6>
+                            </div>
+                            <div class="choice">
+                                <h2>Your order appears here</h2>
+                                <div id="your-orders">
+                                    <table class="table table-sm  pizzatable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Size</th>
+                                                <th scope="col">Crust</th>
+                                                <th scope="col">Topping</th>
+                                                <th scope="col">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ordersmade">
+                                            <tr>
+                                                <td id="pizzaname"></td>
+                                                <td id="pizzasize"></td>
+                                                <td id="pizzacrust"></td>
+                                                <td id="pizzatopping"></td>
+                                                <td id="totals"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p id="pizzatotal"></p>
+                                    <p id="totalbill"></p>
+                                    <p id="addedprice">Delivery fee 150</p>
+                                    <p id="finallmessage"></p>
+                                </div>
+                                <button class="btn btn-secondary  bg-primary addPizza">Add Pizza</button>
+                                <button class="btn btn-secondary bg-success " id="checkout">Checkout</button>
+                                <button class="btn btn-secondary deliver bg-info ">Home delivery</button>
+                            </div>
+                            <div class="delivery">
+                                <form action="" id="form">
+                                    <div class="form-group">
+                                        <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                                        <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                                        <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                                        <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+        
                     </div>
                 </div>
-                <div class="row" id="rowe">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="blackolive" value="blackolive"
-                            name="topping">
-                        <label class="topping" for="topping">Black olives</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="green papper" name="topping">
-                        <label class="topping" for="topping">Green peppers</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="onions" name="topping">
-                        <label class="topping" for="topping">Caramelized onions</label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary" id="firstselect" onclick="findOrder()">ORDER</button>
-            </form>
+            </div>
+        
         </div>
     </div>
     <script src="js/jquery-3.5.1.js"></script>
