@@ -46,6 +46,19 @@ function findOrder() {
     if (flavor === "Margherita Pizza" || flavor === "Pepperoni Pizza" || flavor === "BBQ Chicken Pizza") {
         if (size === "Small") {
             priceSize = 600;
+        } else if (size === "Medium") {
+            priceSize = 850;
+        } else if (size === "Large") {
+            priceSize = 1200;
+        }
+    } else if (flavor === "Hawaiian Pizza" || flavor === "Meat-Lover's Pizza" || flavor === "Chicken Alfredo Pizza") {
+        if (size === "small") {
+            priceSize = 650;
+        } else if (size === "Medium") {
+            priceSize = 900;
+        } else if (size === "Large") {
+            priceSize = 1300;
         }
     }
+    
 }
