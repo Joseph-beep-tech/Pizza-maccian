@@ -60,5 +60,12 @@ function findOrder() {
             priceSize = 1300;
         }
     }
-    
+    var crustPrice;
+    if (crust === "Crispy") {
+        crustPrice = 200;
+    } else if (crust === "Stuffed") {
+        crustPrice = 100;
+    } else if (crust === "Gluten-free") {
+        crustPrice = 200;
+    }
 }
