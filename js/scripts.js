@@ -14,8 +14,6 @@ function findOrder(name, size, crust, topping, total) {
 
 $(document).ready(function() {
     $("button.proceed").click(function(event) {
-
-        let pName = $(".name option:selected").val();
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
         let topping = [];
@@ -88,7 +86,6 @@ $(document).ready(function() {
 
         
         $("button.addPizza").click(function() {
-            let pName = $(".name option:selected").val();
             let sSize = $("#size option:selected").val();
             let Crust = $("#crust option:selected").val();
             let tTopping = [];
@@ -170,7 +167,6 @@ $(document).ready(function() {
             let deliceryAmount = checkoutTotal + 150;
 
             let person = $("input#name").val();
-            let phone = $("input#phone").val();
             let location = $("input#location").val();
 
             if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
