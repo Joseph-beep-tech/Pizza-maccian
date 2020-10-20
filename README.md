@@ -8,7 +8,7 @@
 * on github click the link and you ready to go.
 ### Git Hub Live Link
 *click to view my pizza web*
- {}
+ {https://joseph-beep-tech.github.io/Pizza-maccian/}
  ## Technologies used
  * HTML for designing webpage
 
