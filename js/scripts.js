@@ -1,10 +1,10 @@
 
 let price;
 let crust_price;
-let tooping_price;
+let topping_price;
 let total = 0
 
-function GetPizza(name, size, crust, topping, total) {
+function findOrder(name, size, crust, topping, total) {
     this.name = name;
     this.size = size;
     this.crust = crust;
@@ -138,7 +138,7 @@ $(document).ready(function() {
             checkoutTotal = checkoutTotal + total;
 
 
-            newOrder = new GetPizza(name, size, crust, topping, total);
+            newOrder = new findOrder(name, size, crust, topping, total);
             $("#ordersmade").append(`<tr><td id="pizzaname">` + newOrder.name + `</td><td id="pizzasize"> ` + newOrder.size + `</td><td id="pizzasize"> ` + newOrder.crust + `</td><td id="pizzasize"> ` + newOrder.topping + `</td><td id="pizzasize"> ` + newOrder.total + `</td></tr>`);
         })
 
